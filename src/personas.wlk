@@ -1,14 +1,16 @@
-
 object olivia {
 	var gradoDeConcentracion = 6
 	
 	method gradoDeConcentracion() = gradoDeConcentracion
+	
 	method recibirMasajes() {
 		gradoDeConcentracion += 3
 	}
 	method discute() { 
 		gradoDeConcentracion --
 	}
+	
+	method banioDeVapor() {}
 }
 
 object bruno { 
@@ -41,6 +43,11 @@ object bruno {
 	}
 	
 	method estaPerfecto() = esFeliz and not tieneSed and peso.between(50000,70000)
+	method medioDiaEnCasa() {
+		self.comerFideos()
+		self.tomarAgua()
+		self.mirarNoticiero()
+	}
 	
 }
 
@@ -54,10 +61,27 @@ object ramiro {
 	method banioDeVapor() {
 		pielGrasosa = false 
 	}
-	method comeBigMac() {
+	method comerBigMac() {
 		pielGrasosa = true
 	}
+	
+	method bajarALaFosa() {
+		pielGrasosa = true
+		nivelDeContractura ++
+	}
+	
+	method jugarPaddle() {
+		nivelDeContractura += 3
+	}
+	
+	method diaDeTrabajo() {
+		self.bajarALaFosa()
+		self.comerBigMac()
+		self.bajarALaFosa()
+	}
 }
+
+
 
 
 
