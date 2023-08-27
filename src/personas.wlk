@@ -18,6 +18,12 @@ object bruno {
 	var tieneSed = false
 	var peso = 55000
 	
+	method tieneSed() = tieneSed 
+	
+	method peso() = peso
+	
+	method esFeliz() = esFeliz 
+	
 	method recibirMasajes() {
 		esFeliz = true
 	}
@@ -54,6 +60,8 @@ object bruno {
 object ramiro {
 	var nivelDeContractura = 0
 	var pielGrasosa = false 
+	
+	method nivelDeContractura() = nivelDeContractura
 	
 	method recibirMasajes() {
 		nivelDeContractura = 0.max(nivelDeContractura - 2)

@@ -1,0 +1,27 @@
+import personas.*
+
+test "olivia nace con concentracion = 6" {
+	assert.that(olivia.gradoDeConcentracion() == 6)
+
+}
+
+test 'bruno nace siendo feliz' {
+	assert.that(bruno.esFeliz())
+}
+
+test "bruno al mirar el noticiero no es feliz" {
+	bruno.mirarNoticiero()
+	assert.notThat(bruno.esFeliz())
+
+}
+
+test 'bruno queda con peso = 54500 y tiene sed despues de darse un baño de vapor' {
+	bruno.banioDeVapor()
+	assert.equals(54500, bruno.peso())
+	assert.that(bruno.tieneSed())
+}
+
+test 'ramiro nace con nivel de contractura 0 y en un dia de trabajo aumenta a 2' {
+	ramiro.diaDeTrabajo()
+	assert.equals(2, ramiro.nivelDeContractura())
+}
