@@ -49,6 +49,7 @@ object bruno {
 	}
 	
 	method estaPerfecto() = esFeliz and not tieneSed and peso.between(50000,70000)
+	
 	method medioDiaEnCasa() {
 		self.comerFideos()
 		self.tomarAgua()
@@ -60,6 +61,8 @@ object bruno {
 object ramiro {
 	var nivelDeContractura = 0
 	var pielGrasosa = false 
+	
+	method pielGrasosa() = pielGrasosa 
 	
 	method nivelDeContractura() = nivelDeContractura
 	

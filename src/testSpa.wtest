@@ -1,0 +1,9 @@
+import personas.*
+import spa.*
+
+test "ramiro al ir al spa no tiene piel grasosa y su nivel de contractura es = 0" {
+	ramiro.diaDeTrabajo()
+	spa.atenderPersona(ramiro)
+	assert.that(ramiro.nivelDeContractura() == 0)
+	assert.notThat(ramiro.pielGrasosa())
+}
